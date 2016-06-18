@@ -25,7 +25,7 @@ var main = function() {
     var firstName = $('#first').val();
 
     if(firstName === "") {
-
+      $(".first-name-error").text("Please enter your first name.");
     }
 
     return false;
