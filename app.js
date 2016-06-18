@@ -23,7 +23,8 @@ SOFTWARE.
 var main = function() {
   $('form').submit(function() {
     var firstName = $('#first').val();
-    var lastName = $('#first').val();
+    var lastName = $('#last').val();
+    var email = $('#email').val();
 
     if(firstName === "") {
       $(".first-name-error").text("Please enter your first name.");
@@ -31,6 +32,10 @@ var main = function() {
 
     if(lastName === "") {
       $(".last-name-error").text("Please enter your last name.");
+    }
+
+    if(email === "") {
+      $(".email-error").text("Please enter your email address.");
     }
 
     return false;
