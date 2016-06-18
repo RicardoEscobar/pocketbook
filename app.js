@@ -41,6 +41,8 @@ var main = function() {
 
     if(password === "") {
       $(".password-error").text("Please enter your password.");
+    } else if (password.length < 8) {
+      $(".password-error").text("Short passwords are easy to guess. Try one with at least 8 characters.");
     }
 
     return false;
