@@ -27,6 +27,12 @@ var main = function() {
     var email = $('#email').val();
     var password = $('#password').val();
 
+    // Initializing error messages with blank text
+    $(".first-name-error").text("");
+    $(".last-name-error").text("");
+    $(".email-error").text("");
+    $(".password-error").text("");
+
     if(firstName === "") {
       $(".first-name-error").text("Please enter your first name.");
     }
