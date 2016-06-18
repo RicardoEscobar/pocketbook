@@ -25,6 +25,7 @@ var main = function() {
     var firstName = $('#first').val();
     var lastName = $('#last').val();
     var email = $('#email').val();
+    var password = $('#password').val();
 
     if(firstName === "") {
       $(".first-name-error").text("Please enter your first name.");
@@ -36,6 +37,10 @@ var main = function() {
 
     if(email === "") {
       $(".email-error").text("Please enter your email address.");
+    }
+
+    if(password === "") {
+      $(".password-error").text("Please enter your password.");
     }
 
     return false;
