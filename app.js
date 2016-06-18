@@ -43,14 +43,14 @@ var main = function() {
 
     if(email === "") {
       $(".email-error").text("Please enter your email address.");
+    } else if (email === "jorge.ricardo.escobar@gmail.com") {
+      $(".email-error").text("This email is already taken.");
     }
 
     if(password === "") {
       $(".password-error").text("Please enter your password.");
     } else if (password.length < 8) {
       $(".password-error").text("Short passwords are easy to guess. Try one with at least 8 characters.");
-    } else if (password === "jorge.ricardo.escobar@gmail.com") {
-      $(".password-error").text("This email is already taken.");
     }
 
     return false;
