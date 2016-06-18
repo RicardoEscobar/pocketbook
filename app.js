@@ -23,9 +23,14 @@ SOFTWARE.
 var main = function() {
   $('form').submit(function() {
     var firstName = $('#first').val();
+    var lastName = $('#first').val();
 
     if(firstName === "") {
       $(".first-name-error").text("Please enter your first name.");
+    }
+
+    if(lastName === "") {
+      $(".last-name-error").text("Please enter your last name.");
     }
 
     return false;
